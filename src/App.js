@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <h1>¡Hola Mundo con React!</h1>
       <MiComponente />
-      <button onClick={() => alert('¡Haz hecho clic!')}>
+      <button onClick={() => alert('¡HOLA, SONRIE!')}>
         Haz clic aquí
       </button>
     </div>
