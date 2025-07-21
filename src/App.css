@@ -23,3 +23,31 @@ button:hover {
 .botones-contador button {
   margin: 5px;
 }
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px auto;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tarjeta h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.tarjeta p {
+  margin: 0;
+  color: #666;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 1px; /* separa las tarjetas */
+  flex-wrap: wrap; /* por si la pantalla es pequeña, que bajen */
+  margin: 20px 0;
+}

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './App.css';
 import MiComponente from './MiComponente';
 import Tarjeta from './Tarjeta';
+import imagen1 from './imagenes/foto1.jpg';
+import imagen2 from './imagenes/foto2.jpg';
+import imagen3 from './imagenes/foto3.jpg';
 
 
 function App() {
@@ -23,10 +26,24 @@ function App() {
         <button onClick={() => setContador(0)}>Reiniciar</button>
       </div>
      
-       
-      <Tarjeta titulo="Tarjeta 1" contenido="Este es el contenido de la primera tarjeta" />
-      <Tarjeta titulo="Tarjeta 2" contenido="Otro contenido diferente" />
-
+       <div className="contenedor-tarjetas">
+        <Tarjeta 
+          titulo="Miss Molly" 
+          contenido="Se ve linda pero es mañosa XD"
+          imagen={imagen1}
+        />
+        <Tarjeta 
+          titulo="Miss Candy" 
+          contenido="Se ve agresiva pero es muy Zen :)"
+          imagen={imagen2}
+        />
+        <Tarjeta 
+          titulo="Las reinas del hogar <3" 
+          contenido="Pinky y Cerebro version pewas :D"
+          imagen={imagen3}
+        />
+        </div>
+      <p>&copy; 2025 Agnesline Accesorios. Todos los derechos reservados.</p>
     </div>
   );
 }
